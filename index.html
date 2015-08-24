@@ -8,27 +8,50 @@
     <script src="bower_components/modernizr/modernizr.js"></script>
   </head>
   <body>
-    <header>
+    
+    <header class="contain-to-grid">
       <nav class="top-bar" data-topbar role="navigation">
+        <ul class="title-area">
+          <li class="name show-for-small">
+            <h1><a href="#">Navigation</a></h1>
+          </li>
+          <li class="toggle-topbar menu-icon">
+            <a href="#"><span>Menu</span></a>
+          </li>
+        </ul>
+        <section>
         <ul class="left">
-          <li><a href="#">HOME</a></li>
-          <li><a href="#">SERVICES</a></li>
-          <li><a href="#">GALLERY</a></li>
-          <li><a href="#">ROOMS</a></li>
-          <li><a href="#">CONTACT</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Gallery</a></li>
+            <li class="has-dropdown">
+            <a href="#">Rooms</a>
+              <ul class="dropdown">
+                <li><a href="#">Room 01</a></li>
+                <li><a href="#">Room 02</a></li>
+                <li><a href="#">Room 03</a></li>
+                <li><a href="#">Room 04</a></li>
+                <li><a href="#">Room 05</a></li>
+                <li><a href="#">Room 06</a></li>
+              </ul>
+            </li>
+          <li><a href="#">Contact</a></li>
         </ul>
         <ul class="right">
           <li><a href="http://www.facebook.com">FACEBOOK</a></li>
           <li><a href="http://www.twitter.com">TWITTER</a></li>
         </ul>
+        </section>
       </nav>
     </header>
+    
     
     <div class="row logo">
         <div class="medium-6 medium-offset-3 columns text-center">
             <img src="img/logo.svg">
         </div>
     </div>
+    
     
     <footer>
       <div class="row">
